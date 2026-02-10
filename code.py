@@ -252,4 +252,6 @@ def clear_notification():
 
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True, port=5000)
+    # host='0.0.0.0' -> Tüm internete açıl demek (Senin 74.242.170.93 IP'ni kullanır).
+    # port=80 -> Standart web portudur. Linkin sonuna :5000 yazmana gerek kalmaz.
+    app.run(host='0.0.0.0', port=80, debug=True)
